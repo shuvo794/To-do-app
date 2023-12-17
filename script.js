@@ -89,10 +89,23 @@ let addTask=function(event){
 }
 
 
-let completeTask=function(event){
+let completeTask=function(){
 
-    }
+    let listItem=this.parentNode;
+    let deleteBtn=document.createElement('button');
+    deleteBtn.innerText='Delete';
+    deleteBtn.classList='delete';
+    listItem.appendChild(deleteBtn);
+    let checkBox=listItem.querySelector('input[type="checkbox"]');
+    checkBox.remove();
+    completeUI.appendChild('listItem');
 
+    bindCompeleteItems(listItem,deleteTask);
+}
+
+let bindCompeleteItems=function(){
+    
+}
 
 
 
