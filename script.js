@@ -57,7 +57,9 @@
 // Selector all varible 
 
 let newTask=document.querySelector('#new-task');
-
+let form=document.querySelector('form');
+let todoUl=document.querySelector('.items');
+let completeUI=document.querySelector('.complete-list');
 
 
 
