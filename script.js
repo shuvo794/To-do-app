@@ -54,6 +54,9 @@
 // });
 
 
+// Selector all varible 
+
+let newTask=document.querySelector('#new-task');
 
 
 
