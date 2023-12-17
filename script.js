@@ -61,6 +61,22 @@ let form=document.querySelector('form');
 let todoUl=document.querySelector('.items');
 let completeUI=document.querySelector('.complete-list');
 
+// Function 
+
+let createTask=function(task){
+    let listItem=document.createElement('li');
+    let checkBox=document.createElement('input');
+    let label=document.createElement('label');
+    label.innerText=task;
+    listItem.appendChild(checkBox);
+    listItem.appendChild(label);
+
+    return listItem;
+
+
+
+}
+
 
 
 
