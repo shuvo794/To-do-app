@@ -72,9 +72,35 @@ let createTask=function(task){
     listItem.appendChild(label);
 
     return listItem;
+}
+
+let addTask=function(event){
+
+    event.preventdefault();
+
+    let listItem=createTask(newTask,value);
+    todoUl.appendChild(listItem);
+    newTask.value="";
+
+    // BindIteams the all incpmplete task
+
+    bindInCompeleteItems(listItem,completeTask);
+
+}
+
+
+let completeTask=function(event){
+
+    }
 
 
 
+
+
+let bindInCompeleteItems=function(taskItems,checkBoxClick){
+
+    let checkBox=taskItems.querySelector('input[type="checkBox"]');
+    checkBox.onChange=checkBoxClick;
 }
 
 
